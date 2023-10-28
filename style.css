@@ -1,20 +1,20 @@
-
 * {
     box-sizing: border-box;
-  }
-  
-  
+}
+
+
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #f3f4f7;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.font{
+
+.font {
     font-family: Arial, sans-serif;
 
 }
@@ -32,13 +32,16 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
     text-align: center;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the row horizontally */
+    justify-content: center;
+    /* Center the row horizontally */
 
     margin-right: -15px;
     margin-left: -15px
@@ -46,8 +49,8 @@ body {
 
 
 .signin-form {
-    width: 320px; 
-    height: auto; 
+    width: 320px;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -68,17 +71,19 @@ input {
 }
 
 button {
-    background-color: #0077B5; /* LinkedIn blue color */
+    background-color: #0077B5;
+    /* LinkedIn blue color */
     color: #fff;
     padding: 10px;
     border: none;
-    border-radius: 3px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #005B8A; /* Darker blue for hover effect */
+    background-color: #005B8A;
+    /* Darker blue for hover effect */
 }
 
 
@@ -87,28 +92,34 @@ table {
     border: 1px solid;
     margin-bottom: 1rem;
 
-    
-  }
-  td,th {
+
+}
+
+td,
+th {
     border: 1px solid;
     padding: 2px 8px;
-  }
-  p{
+}
+
+p {
     display: block;
     font-size: 18px;
-  }
-  .text-right{
+}
+
+.text-right {
     text-align: right !important;
-  }
-  .text-left{
+}
+
+.text-left {
     text-align: left !important;
-  }
-  .text-center{
+}
+
+.text-center {
     text-align: center !important;
 
-  }
+}
 
-  .col,
+.col,
 .col-1,
 .col-10,
 .col-11,
@@ -183,24 +194,31 @@ table {
     padding-right: 15px;
     padding-left: 15px
 }
-.bg-yellow{
-    background:#FFFF00 !important;
+
+.bg-yellow {
+    background: #FFFF00 !important;
 }
+
 .bg-lightRed {
-    background-color: rgba(255, 0, 0, 0.3); /* Red color with 50% opacity */
+    background-color: rgba(255, 0, 0, 0.3);
+    /* Red color with 50% opacity */
 }
-.fs-22{
+
+.fs-22 {
     font-size: 22px;
 }
+
 .header {
     width: 100%;
-    background-color: #793115; /* Header background color */
-    color: #000; /* Header text color */
+    background-color: #793115;
+    /* Header background color */
+    color: #000;
+    /* Header text color */
     position: absolute;
-    
-  top: 0;
-  height: 40%;
-  margin: 0;
+
+    top: 0;
+    height: 40%;
+    margin: 0;
     padding: 0;
 }
 
@@ -231,28 +249,36 @@ table {
 }
 
 /* Reset default list styles and remove text decoration from links */
-ul, li {
+ul,
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav {
-    color: #fff; /* Text color */
+    color: #fff;
+    /* Text color */
     width: 100%;
     text-transform: capitalize;
 
-    background-color: #C19A6B ; /* Navbar background color */
+    background-color: #C19A6B;
+    /* Navbar background color */
 
 }
-.color-ligtBrown{
-    background-color: #C19A6B ; /* Navbar background color */
+
+.color-ligtBrown {
+    background-color: #C19A6B;
+    /* Navbar background color */
 
 }
-.color-brown{
-   color: #793115 ; /* Navbar background color */
+
+.color-brown {
+    color: #793115;
+    /* Navbar background color */
 
 }
+
 ul {
     display: flex;
     justify-content: center;
@@ -265,13 +291,15 @@ li {
 }
 
 a {
-    color: #008000; /* Link text color */
+    color: #008000;
+    /* Link text color */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #008000; /* Link text color on hover */
+    color: #008000;
+    /* Link text color on hover */
 }
 
 .box {
@@ -286,32 +314,43 @@ a:hover {
 .blue-box {
     background-color: blue;
 }
-.h1-flexbox{
+
+.h1-flexbox {
     color: #fff;
     margin-top: 50%;
 }
+
 .floating-article {
     position: absolute;
-            width: 300px; /* Set the width of your floating article */
-            background-color: #e1dbdb;    /* margin-left: 1%; */
-        
+    width: 300px;
+    /* Set the width of your floating article */
+    background-color: #e1dbdb;
+    /* margin-left: 1%; */
+
 }
+
 .container-float {
     width: 100%;
     height: 100vh;
     position: relative;
     background-color: #ec4fbdba;
 }
-.pl-1{
+
+.pl-1 {
     padding-left: 1%;
 }
+
 .scrollable-content {
-    max-height: 155px; /* Set a max height for the scrollable area */
-    overflow: hidden; /* Hide vertical scrollbar */
+    max-height: 155px;
+    /* Set a max height for the scrollable area */
+    overflow: hidden;
+    /* Hide vertical scrollbar */
 }
-.m-0{
+
+.m-0 {
     margin: 0;
 }
+
 .article1 {
     left: 20px;
 }
@@ -323,28 +362,94 @@ a:hover {
 .article3 {
     left: 660px;
 }
+
 .article4 {
     left: 20px;
-    top: 354px; /* Adjust the top position to place it under the scrollable paragraph */
+    top: 354px;
+    /* Adjust the top position to place it under the scrollable paragraph */
 }
 
 .article5 {
     left: 340px;
-    top: 354px; /* Adjust the top position to place it under the scrollable paragraph */
+    top: 354px;
+    /* Adjust the top position to place it under the scrollable paragraph */
 }
+
 .scrollable-paragraph {
     position: absolute;
     width: 100%;
-    top: 250px; /* Adjust the top position to place it below the floating articles */
+    top: 250px;
+    /* Adjust the top position to place it below the floating articles */
     height: 90px;
-    border-top: 4px solid #000; /* Add a top border */
-    border-bottom: 4px solid #000; /* Add a bottom border */
-        overflow: hidden;
-        font-weight: bold; /* Make the text inside <pre> bold */
+    border-top: 4px solid #000;
+    /* Add a top border */
+    border-bottom: 4px solid #000;
+    /* Add a bottom border */
+    overflow: hidden;
+    font-weight: bold;
+    /* Make the text inside <pre> bold */
 }
 
 .scrollable-paragraph-inner {
     overflow-y: scroll;
     padding-right: 17px;
     height: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="password"] {
+    position: relative;
+}
+.password-container {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007BFF; /* Blue color */
+}
+.forgot-password {
+    margin-top: 10px;
+
+}
+
+.color-blue {
+    color: #007BFF !important; /* Blue color */
+
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.apple-sign-in-button {
+    background-color: #fff;
+    border: 1px solid #000; /* Black border */
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.apple-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: url('apple-logo.png') no-repeat;
+    background-size: contain;
+}
+
+.apple-text {
+    color: #000; /* Black color */
 }
