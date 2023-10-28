@@ -273,3 +273,20 @@ a {
 a:hover {
     color: #008000; /* Link text color on hover */
 }
+
+.box {
+    flex: 1;
+    height: 100%;
+}
+
+.orange-box {
+    background-color: orange;
+}
+
+.blue-box {
+    background-color: blue;
+}
+.h1-flexbox{
+    color: #fff;
+    margin-top: 50%;
+}
