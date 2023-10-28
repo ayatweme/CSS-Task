@@ -3,18 +3,24 @@
     box-sizing: border-box;
   }
   
-body {
-    display: flex;
-    flex-wrap: wrap;
+  
 
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Make sure the body covers the entire viewport height */
-    margin: 0; /* Remove default margin to avoid offset */
-    font-size: 18px;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.font{
+    font-family: Arial, sans-serif;
+
 }
 
-.container {
+
+.container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -22,6 +28,13 @@ body {
     margin-left: auto
 }
 
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -32,11 +45,42 @@ body {
 }
 
 
-
-.card>hr {
-    margin-right: 0;
-    margin-left: 0
+.signin-form {
+    width: 320px; 
+    height: auto; 
+    margin: 0 auto;
 }
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #0077B5; /* LinkedIn blue color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005B8A; /* Darker blue for hover effect */
+}
+
 
 table {
     width: 30%;
@@ -147,4 +191,85 @@ table {
 }
 .fs-22{
     font-size: 22px;
+}
+.header {
+    width: 100%;
+    background-color: #793115; /* Header background color */
+    color: #000; /* Header text color */
+    position: absolute;
+    
+  top: 0;
+  height: 40%;
+  margin: 0;
+    padding: 0;
+}
+
+.banner {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    text-transform: capitalize;
+}
+
+.banner h1 {
+    font-size: 36px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* Reset default list styles and remove text decoration from links */
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: #fff; /* Text color */
+    width: 100%;
+    text-transform: capitalize;
+
+    background-color: #C19A6B ; /* Navbar background color */
+
+}
+.color-ligtBrown{
+    background-color: #C19A6B ; /* Navbar background color */
+
+}
+.color-brown{
+   color: #793115 ; /* Navbar background color */
+
+}
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+li {
+    padding: 0 15px;
+}
+
+a {
+    color: #008000; /* Link text color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #008000; /* Link text color on hover */
 }
