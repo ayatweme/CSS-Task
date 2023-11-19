@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<style>
+    body {
+        background-color: #6bcba7;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .container {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 30%;
+        height: auto;
+        margin: auto;
+        margin-top: 100px;
+        padding: 40px 0;
+    }
+
+    .container-form {
+        width: 80%;
+    }
+
+    form .text-block {
+        display: block;
+        margin: 30px 0;
+        border: 1px solid gray;
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        color: #54a389;
+        text-align: center;
+        margin: 0;
+    }
+
+    .btn {
+        display: block;
+        margin: 30px auto;
+        border-style: none;
+        background-color: #155e46;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        width: 30%;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    span {
+        color: #54a389;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            width: 80%;
+            height: 500px;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="container-form">
+            <h2>Login</h2>
+            <form>
+                <div>
+                <input type="email" placeholder="Email" class="text-block">
+                <input type="password" placeholder="Password" class="text-block">
+                <input type="checkbox">
+                <label for="">show password</label>
+                <input type="button" value="SIGN IN" class="btn">
+            </div>
+            </form>
+            <p>Forgot <span>Username / Password?</span></p>
+            <p>Don't have an account <span>Sign Up</span></p>
+        </div>
+    </div>
+</body>
+
+</html>

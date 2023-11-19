@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Task 3</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #8500cd, #b600c4);
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 90%;
+            height: 600px;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+
+        .text-block-container {
+            position: relative;
+            margin: 10px 0;
+            width: 90%;
+        }
+
+        .text-block {
+            border-style: none;
+            border-radius: 30px;
+            height: 50px;
+            width: 100%;
+            padding-left: 40px; /* Adjusted for icon space */
+            background-color: #e5e5e5;
+        }
+
+        .text-block-container i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #555;
+        }
+
+        .btn {
+            width: 90%;
+            margin: 30px auto;
+            border-style: none;
+            background-color: #1fcc44;
+            padding: 10px;
+            border-radius: 30px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-align: center; /* Centered for consistency */
+        }
+
+        p, h1 {
+            text-align: center;
+        }
+
+        span, .green {
+            color: #1fcc44;
+        }
+
+        .container-image img {
+            width: 100%; /* Ensure the image takes the full width of the container */
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+                justify-content: center;
+            }
+
+            .container-image img {
+                width: 300px;
+            }
+
+            form {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: 800px;
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-image">
+            <img src="images/laptop.png" alt="Laptop Image">
+        </div>
+        <form class="container-form">
+            <h1>Member Login</h1>
+            <div class="text-block-container">
+                <i class="fa fa-envelope"></i>
+                <input type="email" class="text-block" placeholder="Email">
+            </div>
+            <div class="text-block-container">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="text-block" placeholder="Password">
+            </div>
+            <button class="btn">Login</button>
+            <p>Forget <span>Username/Password?</span></p>
+            <p class="green">Create your Account  <i class="fa fa-arrow-right"></i></p>
+        </form>
+    </div>
+</body>
+</html>
